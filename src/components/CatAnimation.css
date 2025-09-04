@@ -1,0 +1,17 @@
+.cat-sprite {
+    width: 64px;
+    height: 64px;
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+}
+
+.cat-sprite.idle {
+    background-image: url("/src/assets/cat/idle.png");
+    animation: idleAnim 1s steps(8, end) infinite;
+    transform: scale(6);
+    transform-origin: center;
+}
+@keyframes idleAnim {
+    from { background-position-x: 0; }
+    to { background-position-x: -512px; } /* Size of image */
+}
