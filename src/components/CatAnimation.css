@@ -10,8 +10,36 @@
     animation: idleAnim 1s steps(8, end) infinite;
     transform: scale(6);
     transform-origin: center;
+    margin-left: 15px;
 }
+
+.cat-sprite.working {
+    background-image: url("/src/assets/cat/working\ .png");
+    animation: workingAnim 1s steps(4 ,end) infinite;
+    transform: scale(6);
+    transform-origin: center;
+    margin-left: 55px;
+}
+
+.cat-sprite.sleeping {
+    background-image: url("/src/assets/cat/sleeping.png");
+    animation: sleepingAnim 1s steps(2 ,end) infinite;
+    transform: scale(6);
+    transform-origin: center;
+    margin-right: 75px;
+}
+
 @keyframes idleAnim {
     from { background-position-x: 0; }
     to { background-position-x: -512px; } /* Size of image */
+}
+
+@keyframes workingAnim {
+    from { background-position-x: 0; }
+    to { background-position-x: -256px; } /* Size of image */
+}
+
+@keyframes sleepingAnim {
+    from { background-position-x: 0; }
+    to { background-position-x: -128px; } /* Size of image */
 }
