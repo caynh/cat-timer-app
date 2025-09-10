@@ -14,7 +14,7 @@
 }
 
 .cat-sprite.working {
-    background-image: url("/src/assets/cat/working\ .png");
+    background-image: url("/src/assets/cat/working.png");
     animation: workingAnim 1s steps(4 ,end) infinite;
     transform: scale(6);
     transform-origin: center;
