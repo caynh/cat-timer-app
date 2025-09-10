@@ -20,7 +20,7 @@ export default function ThemeOptions ({ themeIndex, setThemeIndex, themes }) {
   }, []);
 
     return (
-    <div ref={dropdownRef} className="relative left-33 top-30 flex items-center gap-3 z-20">
+    <div ref={dropdownRef} className="relative left-33 top-35 flex items-center gap-3 z-20">
       <button 
       onClick={() => setOpen(!open)}
       className="mb-2 text-lg">Theme</button>

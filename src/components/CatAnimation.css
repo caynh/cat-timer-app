@@ -10,7 +10,7 @@
     animation: idleAnim 1s steps(8, end) infinite;
     transform: scale(6);
     transform-origin: center;
-    margin-left: 15px;
+    margin-left: 100px;
 }
 
 .cat-sprite.working {
@@ -18,7 +18,7 @@
     animation: workingAnim 1s steps(4 ,end) infinite;
     transform: scale(6);
     transform-origin: center;
-    margin-left: 55px;
+    margin-left: 120px;
 }
 
 .cat-sprite.sleeping {
@@ -26,7 +26,6 @@
     animation: sleepingAnim 1s steps(2 ,end) infinite;
     transform: scale(6);
     transform-origin: center;
-    margin-right: 75px;
 }
 
 @keyframes idleAnim {

@@ -36,7 +36,7 @@ useEffect(() => {
         setThemeIndex={setThemeIndex}
         themes={THEMES} 
         />
-        <p className='relative flex flex-col text-4xl'>PomoCat</p>
+        <p className='relative flex flex-col text-4xl top-10'>PomoCat</p>
       <div className='relative h-screen flex flex-col items-center justify-center'>
       <Timer isBreak={isBreak} setIsBreak={setIsBreak} />
       </div>
