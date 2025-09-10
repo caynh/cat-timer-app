@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
+import { useAnimate } from "motion/react";
 import Timer from './components/Timer';
 import ThemeOptions from './components/ThemeOptions';
 import './App.css';
 
 function App() {
   const [isBreak, setIsBreak] = useState(0)
+  const [, animate] = useAnimate()
   const [themeIndex, setThemeIndex] = useState(() => {
     const stored = localStorage.getItem("pomocat-theme");
     return stored ? Number(stored) : 0;
@@ -18,22 +20,22 @@ function App() {
     "#744210", // yellow-900
     "#7b341e",  // orange-900
     "#702459", // pink-900
-    "#44337a" // purple-900
-   
-    
+    "#44337a" // purple-900  
 ];
 
+  
 useEffect(() => {
-    document.body.style.backgroundColor = THEMES[themeIndex];
-    localStorage.setItem("pomocat-theme", themeIndex);
+    animate(document.body, { backgroundColor: THEMES[themeIndex], opacity: 1 }, { ease: "easeIn", duration: 0.6 })
+      localStorage.setItem("pomocat-theme", themeIndex);
   }, [themeIndex]);
 
   return (
-      <div>
+      <div>  
         <ThemeOptions 
         themeIndex={themeIndex}
         setThemeIndex={setThemeIndex}
-        themes={THEMES} />
+        themes={THEMES} 
+        />
         <p className='relative flex flex-col text-4xl'>PomoCat</p>
       <div className='relative h-screen flex flex-col items-center justify-center'>
       <Timer isBreak={isBreak} setIsBreak={setIsBreak} />

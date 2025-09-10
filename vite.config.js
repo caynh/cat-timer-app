@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss()
   ],
+  base: '/cat-timer-app/',
   server: {
     watch: {
       usePolling: true,
