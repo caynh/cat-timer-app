@@ -6,7 +6,7 @@
   margin: 0;
 }
 html, body {
-  height: 90%;
+  height: 100%;
 }
 body {
   line-height: 1.5;
@@ -49,11 +49,10 @@ a:hover {
 }
 
 body {
-  margin: 100px;
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 80vh;
+  min-height: 100vh;
 }
 
 h1 {
