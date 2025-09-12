@@ -31,8 +31,8 @@ useEffect(() => {
 
   return (
       <div>  
-        <div className='h-screen flex flex-col items-center justify-center'>
-        <p className=' p-10 flex flex-col text-4xl'>PomoCat</p>
+        <div className='h-[100svh] flex flex-col items-center justify-center'>
+        <p className=' p-6 flex flex-col text-4xl'>PomoCat</p>
         <ThemeOptions 
         themeIndex={themeIndex}
         setThemeIndex={setThemeIndex}

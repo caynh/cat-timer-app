@@ -23,10 +23,10 @@ export default function ThemeOptions ({ themeIndex, setThemeIndex, themes }) {
     <div ref={dropdownRef} className="relative flex flex-col items-center justify-center gap-3 z-20">
       <button 
       onClick={() => setOpen(!open)}
-      className="relative mb-2 text-lg">Theme</button>
+      className="relative left-25 mb-2 text-lg">Theme</button>
 
     {open && (
-      <div className="absolute left-10 top-11 w-63 py-2 px-4 rounded shadow-lg grid grid-cols-4 gap-x-4 gap-y-4 z-10 dropdown">
+      <div className="absolute left-45 top-11 w-63 py-2 px-4 rounded shadow-lg grid grid-cols-4 gap-x-4 gap-y-4 z-10 dropdown">
         {themes.map((theme,i) => (
             <button 
             key={i}

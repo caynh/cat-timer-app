@@ -28,7 +28,7 @@ export default function Timer({isBreak, setIsBreak}) {
 
     return (
         <div className="pb-50 flex flex-col items-center justify-center gap-8">
-            <p className="pb-55 pt-40 text-8xl min-w-fit">{formatTime(time)}</p>
+            <p className="pb-55 pt-20 text-8xl min-w-fit">{formatTime(time)}</p>
 
             <CatAnimation isBreak={isBreak} time={time} isRunning={isRunning} />
             <div className="flex gap-2">
